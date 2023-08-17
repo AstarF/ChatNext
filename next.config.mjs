@@ -1,7 +1,7 @@
 import webpack from "webpack";
 import NextBundleAnalyzer from '@next/bundle-analyzer';
 
-const mode = process.env.BUILD_MODE ?? "standalone";
+const mode = "export"//process.env.BUILD_MODE ?? "standalone";
 console.log("[Next] build mode", mode);
 
 const disableChunk = !!process.env.DISABLE_CHUNK || mode === "export";
